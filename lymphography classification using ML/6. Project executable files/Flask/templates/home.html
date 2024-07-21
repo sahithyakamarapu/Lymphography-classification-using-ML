@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lymphography</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .main{
+        width: 100%;
+        background-image: linear-gradient(rgba(9,0,77,0.65),rgba(9,0,77,0.65)), url('https://i.pinimg.com/736x/19/7a/dc/197adca89ad9811cd87986f14d17b31f.jpg');
+        background-position: center;
+        background-size: cover; 
+        height: 109vh;
+    }
+    .navbar{
+        width: 1200px;
+        height: 90px;
+        margin:auto;
+    }
+    .icon{
+        width: 200px;
+        float: left;
+        height: 70px;
+    }
+    .logo{
+        color: #ff7200;
+        padding-left: 0;
+        margin-left: 0;
+        margin: 0;
+
+    }
+    .logo{
+        width: 100px;
+        height: auto;
+    }
+    .menu{
+        width: 400px;
+        float: left;
+        height: 70px;
+    }
+    ul{
+        float: left;
+        display: flex;
+        justify-content:center ;
+        align-items: center;
+    }
+    ul li{
+       list-style:none;
+       margin-left: 120px;
+       margin-top: 30px;
+       font-size: 18px;
+    }
+    ul li a{
+        text-decoration: none;
+        color: white;
+        font-family: Arial;
+        font-weight: bold;
+        transition: 0.4s ease-in-out;
+    }
+    ul li a:hover{
+        color: #ff7200;
+    }
+    .content{
+        width: 1200px;
+        height: auto;
+        margin: auto;
+        color: white;
+        position: relative;
+        margin-top: 10%;
+    }
+    .content .par{
+        padding-left: 20px;
+        padding-bottom: 25px;
+        font-family:Arial;
+        letter-spacing:1.2px ;
+        line-height: 30px;
+    }
+    .content .h1{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 50px;
+        padding-left: 50px;
+        
+        margin-top: 20%;
+        letter-spacing: 2px;
+    }
+    .content .cn{
+        width:160px ;
+        height: 40px;
+        background: #ff7200;
+        border: none;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        font-size: 18px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .4s ease;
+    }
+    .content .cn .a{
+        text-decoration: none;
+        color: black;
+        transition: .3s ease;
+
+    }
+    .cn:hover{
+        background-color: aliceblue;
+    }
+    .content span{
+        color: #ff7200;
+        font-size: 60px;
+
+    }
+    .img-container{
+    float: right;
+    width: 35%;
+}
+
+</style>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">LymphoGraphy</h2>
+                <img src="https://i.pinimg.com/originals/71/87/75/7187758eb21d8a38b425826115607fbd.png" class="logo">
+                
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <img class="img-container" src="https://cancercenterforhealing.com/wp-content/uploads/swollen-lymph-nodes.jpg">
+
+            <h1>Lymphography Classification<br><span>Using ML</span></h1>
+            <p class="par">A lymph node is an oval-shaped organ of the immune system,<br> distributed widely throughout the body.<br>Proper classification and determination of credential attributes<br> could simplify the process of disease prediction and evoke deterrent measures.</p>
+            <button class="cn"><a href="{{url_for('index')}}">Get Started</a></button>
+        </div>
+    </div>
+</body>
+</html>

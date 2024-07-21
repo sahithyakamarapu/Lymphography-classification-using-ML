@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lymphography</title>
+</head>
+<style>
+   /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://image.freepik.com/free-vector/orange-medical-background_23-2147490513.jpg'); /* Light gray background */
+    background-size: cover;
+
+}
+
+.container {
+    max-width: 800px;
+    min-height: 300px;
+    margin: 80px auto;
+    background-color: #fff; /* White background for the container */
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Box shadow for a slight depth effect */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.prediction {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-right: 10px;
+    font-size: 40px;
+    line-height: 1.4;
+}
+
+
+img {
+    
+    
+    max-width: 90%;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Box shadow for the image */
+}
+
+</style>
+<body>
+  
+    <div class="container">
+        <header>
+            <h1>Lymphography Classification Results</h1>
+        </header>
+        <main>
+            <div class="prediction">
+                <div id="prediction">
+                    <p>The prediction is:{{y}}</p>
+                </div>
+                <img src="https://gmka.org/wp-content/uploads/2022/07/Depositphotos_36004289_S-780x480.jpg" alt="Result Image">
+            </div>
+        </main>
+    </div>
+</body>
+</html>
